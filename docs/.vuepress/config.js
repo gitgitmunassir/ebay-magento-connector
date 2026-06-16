@@ -96,9 +96,10 @@ export default defineUserConfig({
   description: 'Official documentation for Webkul eBay Magento Connect extension — import, export, sync orders, and automate listings.',
 
   head: [
-    ['link', { rel: 'icon', href: '/webkul-logo.png' }],
+    ['link', { rel: 'icon', href: '/ebay-magento-connector/webkul-logo.png' }],
     ['meta', { name: 'theme-color', content: '#E53238' }],
   ],
 
-  base: '/',
+  // Project site: https://gitgitmunassir.github.io/ebay-magento-connector/
+  base: '/ebay-magento-connector/',
 })
