@@ -1,0 +1,46 @@
+# Features Of eBay Connector for Magento 2 (Adobe Commerce)
+
+- Import eBay products, orders and map categories in Magento. However, the admin can select only active products to import from eBay.
+- Export products from Magento to the eBay store.
+- Import Simple as well as Configurable product types.
+- Export Simple, Configurable, Bundle and Group product types
+- Admin can select product types that will export from eBay.
+- Do product synchronization with eBay condition, specifications, and variations.
+- Real-time order and inventory (as per admin panel settings)sync based on eBay webhooks.
+- Auto-update shipping and tracking information on eBay in real time.
+- Sandbox mode is available for testing and development.
+- Revise eBay import product details from Magento.
+- Configure return policy details for export products.
+- Set the export product listing duration.
+- Admin can create the listing templates.
+- Set default sync category, order status, and quantity.
+- Mention shipping details for export products.
+- Import eBay products according to end listing date range.
+- Product export to eBay with the listing template.
+- Product export to eBay with eBay store category according to mapping.
+- Option in configuration to select gallery type to export product listing on eBay.
+- Magento 2 ebay integration module supports package dimensions attribute mapping.
+- Export products to eBay using the SKU filter.
+- At the time of export the custom options in a product are eBay Variation.
+- Select the default store view and default website.
+- Supports multiple language translations.
+- The module source code is open for customization.
+- Admin can set price rules for the import/export products of eBay from Magento.
+- Aria2c Tool implemented for downloading product images on server.
+- Implemented Magento CSV Model For Product Import for faster products import.
+
+<!-- Newly Added Features -->
+- Automatic Weight Unit Conversion During Sync
+- Import Filter for Out-of-Stock Products
+- Syncs shipping costs between eBay and Magento 2 at the product level.
+- Supports a dedicated custom field for eBay-specific product titles during export.
+- Price-Based Product Export Filter — Exports only products whose price meets or exceeds a configured minimum value.
+- Automatic Product Export to eBay — Auto-exports products to eBay once category mapping and required attributes are configured, eliminating manual export steps.
+- Product-Level Shipping Cost Sync (eBay → Magento 2) — Imports eBay product-level shipping charges into Magento 2 to apply consistent shipping rates across both platforms.
+- SKU to eBay MPN Mapping — Automatically maps Magento 2 SKU to the eBay MPN attribute during import, export, and sync.
+- Automatic Brand Attribute Mapping (Magento 2 → eBay) — Auto-maps the Magento 2 Brand attribute to the eBay Brand attribute during export and real-time sync.
+- Import Product Dimensions and Weight from eBay — Imports and syncs product dimensions and weight from eBay to Magento 2, enabling accurate shipping calculations.
+- eBay-Specific Product Images for Export — Enables exporting separate, eBay-specific product images instead of default store images.
+- Automatic Category Creation During Import — Auto-creates Magento 2 categories based on the eBay category hierarchy during import, preserving the parent-child structure and assigning products accordingly.
+- Automatic Category Mapping Based on Identical Category Structure — Automatically maps matching eBay and Magento 2 categories when their hierarchy and names are identical, removing the need for manual mapping.
+- Manual Product Import via eBay Item SKU — Allows merchants to import specific eBay products directly using their eBay Item SKU

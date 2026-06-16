@@ -1,52 +1,47 @@
-# Installation
+# Installation Of eBay Connector for Magento 2
 
-## Requirements
+Customers will get a **zip folder** and they have to extract the contents of this zip folder on their system. Thus, the extracted folder has an ** src** folder, inside the src folder you have the **app** folder.
 
-- Magento 2.4.x with `Magento_Eav` and `Magento_Catalog` modules
-- PHP compatible with Magento 2.4
-- `webkul/ebayconnector` package (supplies the `Ebay` namespace / API client)
-- Node.js 20.9.0+ (for this documentation site only)
+You need to transfer this **app** folder into the Magento2 root directory on the server as shown below.
 
-## Install the extension
+![magento2-folder-structure](https://cdnblog.webkul.com/blog/wp-content/uploads/2023/09/magento2-folder-structure.webp)
 
-1. Place the module in `app/code/Webkul/Ebaymagentoconnect`
-2. Enable the module:
+If you download the module from Magento Connect then unzip the respective extension zip.
 
-```bash
-bin/magento module:enable Webkul_Ebaymagentoconnect
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento cache:flush
-```
+Henceforth create **Webkul**(vendor) then **Ebaymagentoconnect**(module) name folder inside your magento2 root directory as:
 
-3. Configure eBay credentials under **Stores → Configuration → Webkul → eBay Magento Connect**
+**app/code/Webkul/Ebaymagentoconnect** and then move all module’s files inside **/app/code/Webkul/Ebaymagentoconnect/** folder in magento2 root directory.
 
-## eBay application setup
+![ebay-magento-connector-folder-structure](https://cdnblog.webkul.com/blog/wp-content/uploads/2023/09/ebay-magento-connector-folder-structure.webp)
 
-You will need from the eBay Developer Program:
+After the upload, you can see the folders in your Magento2 Root Directory.
 
-- Application ID (App ID)
-- Cert ID
-- Dev ID
-- RuName (for OAuth redirect)
-- User tokens (obtained via OAuth callback)
+![ebay-magento-connector-folder-struscture](https://cdnblog.webkul.com/blog/wp-content/uploads/2023/09/ebay-magento-connector-folder-struscture.webp)
 
-The OAuth callback URL pattern:
+Hereafter the successful installation, you have to run these commands in the Magento2 root directory.
 
 ```
-https://<your-store-domain>/ebaymagentoconnect/index/fetchtoken
+composer require webkul/ebayconnector
 ```
 
-## Verify installation
+```
+php bin/magento setup:upgrade
+```
 
-After setup, confirm these admin menu items appear:
+```
+php bin/magento setup:di:compile
+```
 
-- Map Category
-- Map Product
-- Map eBay Order
-- Real Time Missed Orders
-- Export Queue Log
-- Bulk Export Tasks
-- Listing Templates
-- Price Rules
-- Configuration
+```
+php bin/magento setup:static-content:deploy
+```
+
+```
+php bin/magento indexer:reindex
+```
+
+```
+php bin/magento cache:flush
+```
+
+**Note- “composer require webkul/ebayconnector”** this command is necessary to run in the terminal for the proper installation of the module.

@@ -1,27 +1,26 @@
-# Introduction
+---
+title: Introduction
+---
 
-**eBay Magento Connect** (`Webkul_Ebaymagentoconnect`) is a Magento 2 extension that connects your Magento catalog, orders, and inventory with eBay.
+# eBay Connector for Magento 2
 
-## What it does
 
-- **Product import/export** — Sync listings between eBay and Magento using REST Inventory/Offer APIs and legacy Trading API flows.
-- **Order sync** — Import eBay orders into Magento via cron and real-time SOAP notifications.
-- **Category mapping** — Map Magento categories to eBay categories with item specifics support.
-- **Auto-export** — Queue-based and bulk Feed API export paths for automated listing.
-- **Real-time notifications** — eBay platform events delivered via SOAP endpoint and message queues.
+Updated 4 June 2026
 
-## Module info
+[Live Demo](https://magento2demo.webkul.in/ebayconnector/?demo=Webkul_Ebaymagentoconnect)
 
-| Property | Value |
-|----------|-------|
-| Module path | `app/code/Webkul/Ebaymagentoconnect` |
-| Composer name | `webkul/module-ebaymagentoconnect` |
-| Version | 4.0.7 |
-| PHP dependency | `webkul/ebayconnector` 1.0.* |
+[eBay Connector for Magento 2](https://store.webkul.com/magento2-ebay-connector.html) (Adobe Commerce) allows you to integrate the Magento 2 store with the eBay store. Import products, categories, and orders from eBay to Magento 2.
 
-## Next steps
+The admin can also export the product from the Magento 2 (Adobe Commerce) store to eBay.
 
-- [Installation](./installation.md) — Requirements and setup
-- [Configuration](./configuration.md) — System config overview
-- [Admin Menu](./admin-menu.md) — Backend navigation and ACL
-- [Import & Export](./import-export.md) — Product sync workflows
+Hence the admin can provide eBay specifications, variations, refund policy, shipping details for export products.
+
+Check a brief overview of the plugin’s initial configuration settings –
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6gV0ll1amrY" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Check a brief overview of the plugin’s management options available to the admin –
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RyvEobbc5EM" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

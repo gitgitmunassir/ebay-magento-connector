@@ -1,0 +1,129 @@
+:root {
+  --wk-brand: #E53238;
+  --wk-brand-dark: #c4282d;
+  --wk-text: #1a1a2e;
+  --wk-muted: #5c5c7a;
+}
+
+html.dark {
+  --wk-text: #e8e8f0;
+  --wk-muted: #a0a0b8;
+}
+
+.vp-navbar {
+  border-bottom: 1px solid rgba(229, 50, 56, 0.15);
+}
+
+.vp-navbar .vp-btn,
+.vp-navbar a.route-link-active {
+  font-weight: 600;
+}
+
+.vp-navbar .auto-link:nth-child(2) a,
+.vp-navbar .auto-link:nth-child(3) a {
+  color: var(--wk-brand);
+  font-weight: 700;
+}
+
+.vp-home {
+  .hero {
+    .main {
+      max-width: 960px;
+    }
+
+    .title {
+      font-size: 2.6rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--wk-brand) 0%, #ff6b35 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .description {
+      font-size: 1.15rem;
+      color: var(--wk-muted);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .actions .vp-btn.primary {
+      background: var(--wk-brand);
+      border-color: var(--wk-brand);
+
+      &:hover {
+        background: var(--wk-brand-dark);
+        border-color: var(--wk-brand-dark);
+      }
+    }
+  }
+
+  .features {
+    padding: 2rem 0 3rem;
+
+    .feature {
+      border: 1px solid rgba(229, 50, 56, 0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+
+      &:hover {
+        box-shadow: 0 8px 24px rgba(229, 50, 56, 0.12);
+        transform: translateY(-2px);
+      }
+
+      h2 {
+        color: var(--wk-brand);
+        font-size: 1.1rem;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      p {
+        color: var(--wk-muted);
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .footer {
+    color: var(--wk-muted);
+    border-top: 1px solid rgba(229, 50, 56, 0.1);
+    padding-top: 2rem;
+  }
+}
+
+.vp-page {
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    margin: 1rem 0;
+  }
+
+  iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+
+  h1 {
+    font-weight: 800;
+    color: var(--wk-text);
+  }
+
+  h2, h3 {
+    color: var(--wk-brand);
+    border-bottom-color: rgba(229, 50, 56, 0.2);
+  }
+}
+
+.vp-sidebar {
+  .vp-sidebar-heading {
+    color: var(--wk-brand);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+}
